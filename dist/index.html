@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xuansining的简历</title>
+</head>
+
+<body>
+    <style id="style"></style>
+    <span id="demo"></span>
+    <div class="divwrapper">
+        <div id="div1"></div>
+    </div>
+
+    <style>#demo {
+            word-break: break-all;
+        }
+
+        #div1 {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+        #div1::before,
+        #div1::after {
+            content: '';
+            display: block;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 500px) {
+            #demo {
+                height: 50vh;
+                overflow: auto;
+            }
+
+            .divwrapper {
+                height: 50vh;
+            }
+
+            #div1 {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+
+        }</style>
+    <script src="/main.1f19ae8e.js"></script>
+</body>
+
+</html>
